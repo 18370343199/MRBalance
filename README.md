@@ -18,3 +18,12 @@ Python 3.9
 
 openai(latest)
 
+## Run MRBalance
+
+```
+cd CausalDebate
+
+python Muty_agent_debate.py
+
+python ECI_compute_score.py
+```
