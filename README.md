@@ -20,6 +20,8 @@ openai(latest)
 
 ## Run MRBalance
 
+After adding your API key to the util.py file and configuring the runtime parameters in the Mutty_agent_Debate.py file, execute the following command.
+
 ```
 cd CausalDebate
 
