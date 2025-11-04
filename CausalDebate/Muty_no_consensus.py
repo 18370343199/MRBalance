@@ -22,34 +22,10 @@ from tools import *
 from utils.build_ICL_data import get_ESC_demonstrations, get_esc_COT
 import sys
 from utils.log_kits import get_logger
-# PART = int(sys.argv[1])
-# EXP_NAME = sys.argv[2]
-# MODEL = sys.argv[3]
-#
-# ACTIVATION = "listwise"
-# TYPE = "code_completion"
-# # ROLES = ["Assistant", "Mathematician", "Mathematician", "Assistant"]
-# DIR_NAME = sys.argv[4]
-# ROLES = ast.literal_eval(sys.argv[5])
-# JUDGES = ast.literal_eval(sys.argv[6])
-# DIR_NAME = DIR_NAME + '_' + '_'.join(ROLES)
-#
-# SUBSET = 50
-
-# @retry(wait=wait_random_exponential(min=10, max=20), stop=stop_after_attempt(10))
-# def completion_with_backoff_davinci(args, logger, **kwargs):
-#     try:
-#         response = client.chat.completions.create(**kwargs)
-#         response_ls = [response["choices"][i]["text"] for i in range(len(kwargs["prompt"]))]
-#         return response_ls
-#     except Exception as e:
-#         logger.warning("\n\n" + traceback.format_exc() + "\n\n")
-#         raise e
 
 
 RETRIES = 25
 MAX_TOKENS = 1024  # 最长生成长度
-# BETA_URL = "http://43.163.219.59:8001/beta"
 from openai import OpenAI
 
 # add your key
