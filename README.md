@@ -15,5 +15,6 @@ author = {Xiang Zou and Xuanhong Li and Po Hu and Ming Dong},
 
 ## Environment
 Python 3.9
-openai
+
+openai(latest)
 
